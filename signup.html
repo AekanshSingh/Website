@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SignUp Form</title>
+            <Style>
+                body{
+                    background-color:#0197f6;
+                }
+                .signup{
+                    background-color:white;
+                    border: 3px solid black;
+	               
+                    padding: 30px;
+                    padding-left: 100px;
+                    width:45%;
+                    margin:30px;
+                }
+                h1{
+                   margin-left: 200px;
+                }
+
+                label{
+                    font-size: 20px;
+                    font-weight: bolder;
+                }
+                input{
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    text-align: center;
+                    font-size: 17px;
+                }
+
+                input[type=email]{
+                    width: 300px;
+                }
+                input[type=submit]{
+                    width:150px;
+                    margin-left: 200px;
+                    background-color:#0197f6;
+                    color:white;
+                    font-size:17px;
+                    font-weight: bolder;
+                }
+                span{
+                    color: red;
+                    font-size: 15px;
+                   
+                }
+            </Style>
+    </head>
+    <body>
+        <div class="signup">
+            <h1>Sign up</h1>
+          <form method="POST" action="connect.php">
+           <label>  Name: </label><input type="text" name="fname" placeholder="First Name" required >
+              <input type="text" name="lname" placeholder="Last Name" required ><br><br>
+              <label> Email: </label> <input type="email" name="email" placeholder="ex: abc@gmail.com" required><br><br>
+              <label> Password: </label> <input type="password" name="pass" placeholder="Password"required><br><br>
+              <label> Confirm Password: </label> <input type="password" name="confirm"placeholder="Confirm Password" required><br><br>
+            <label><sup><span>*</span></sup>Enter Your Friend's Name: </label>
+            <input type="text" name="friend" placeholder="Friend's Name" required><br><br>
+              <input type="submit" name="register"><br><br>
+              <span>* Please remember it in case you forgot your Password</span>
+
+          </form>
+        </div>
+
+    </body>
+</html>
